@@ -346,6 +346,115 @@ ul li {
 	}
 }
 
+/* Blog Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.blog-section {
+  margin-top: var(--spacing-xxl);
+  text-align: left;
+}
+
+.blog-section h2 {
+  font-size: var(--scale-3);
+  font-weight: 700;
+  margin-bottom: var(--spacing-l);
+  text-align: center;
+}
+
+.blog-post-card {
+  display: block;
+  background-color: var(--button-background);
+  color: var(--button-text, #1a1a1a);
+  border: 1px solid #e1e1e1;
+  border-radius: 0.75rem; /* 12px */
+  padding: var(--spacing-l);
+  text-decoration: none;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  overflow: hidden;
+}
+
+:root.theme-dark .blog-post-card {
+  background-color: #1e1e1e;
+  border-color: #333;
+  color: #ffffff;
+}
+
+.blog-post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  color: var(--button-text, #1a1a1a); /* Keep text color on hover */
+}
+
+:root.theme-dark .blog-post-card:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  color: #ffffff; /* Keep text color on hover for dark theme */
+}
+
+
+.blog-post-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: var(--spacing-m);
+  background-color: #f0f0f0; /* Placeholder color */
+}
+
+:root.theme-dark .blog-post-image {
+    background-color: #333;
+}
+
+.blog-post-content h3 {
+  font-size: var(--scale-2);
+  font-weight: 700;
+  margin: var(--spacing-s) 0;
+  line-height: 1.2;
+}
+
+.blog-post-content p {
+  font-size: var(--scale-0);
+  margin-bottom: var(--spacing-m);
+  line-height: 1.5;
+}
+
+.blog-post-date {
+  font-size: 0.875rem; /* 14px */
+  color: #666;
+  margin-bottom: var(--spacing-s) !important;
+}
+
+:root.theme-dark .blog-post-date {
+  color: #aaa;
+}
+
+.read-more {
+  font-weight: 700;
+  color: #2457F5;
+  text-decoration: none;
+}
+
+:root.theme-dark .read-more {
+  color: #4899F7;
+}
+
+.blog-post-card:hover .read-more {
+  text-decoration: underline;
+}
+
+@media (min-width: 550px) {
+  .blog-post-card {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-l);
+  }
+
+  .blog-post-image {
+    width: 200px;
+    height: 150px;
+    flex-shrink: 0;
+    margin-bottom: 0;
+  }
+}
+
 /* Font Face Definitions
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @font-face {
