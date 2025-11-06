@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Hugo Vaillaud
+N:Vaillaud;Hugo;;;
+TEL;TYPE=CELL:+33650985775
+EMAIL:hugovaillaud@gmail.com
+URL:https://vaillus.github.io
+URL;type=LinkedIn:https://www.linkedin.com/in/hugo-vaillaud-phd-819a20102/
+URL;type=GitHub:https://github.com/Vaillus/
+NOTE:Docteur en IA spécialisé dans les systèmes de décision autonomes pour la défense. Expertise en recherche opérationnelle, reinforcement learning et agentic workflows (LLM).
+PHOTO;VALUE=uri:https://vaillus.github.io/images/avatar.png
+END:VCARD
+
